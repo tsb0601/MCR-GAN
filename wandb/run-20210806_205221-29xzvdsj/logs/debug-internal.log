@@ -1,0 +1,43 @@
+2021-08-06 20:52:21,566 INFO    MainThread:1068 [internal.py:wandb_internal():88] W&B internal server running at pid: 1068, started at: 2021-08-06 20:52:21.563645
+2021-08-06 20:52:21,567 DEBUG   HandlerThread:1068 [handler.py:handle_request():124] handle_request: check_version
+2021-08-06 20:52:21,568 INFO    WriterThread:1068 [datastore.py:open_for_write():80] open: E:\UCB\2021 Summer\GEnerative\MCR2\wandb\run-20210806_205221-29xzvdsj\run-29xzvdsj.wandb
+2021-08-06 20:52:21,572 DEBUG   SenderThread:1068 [sender.py:send():179] send: header
+2021-08-06 20:52:21,572 DEBUG   SenderThread:1068 [sender.py:send_request():193] send_request: check_version
+2021-08-06 20:52:22,620 DEBUG   SenderThread:1068 [sender.py:send():179] send: run
+2021-08-06 20:52:24,126 INFO    SenderThread:1068 [dir_watcher.py:__init__():168] watching files in: E:\UCB\2021 Summer\GEnerative\MCR2\wandb\run-20210806_205221-29xzvdsj\files
+2021-08-06 20:52:24,126 INFO    SenderThread:1068 [sender.py:_start_run_threads():716] run started: 29xzvdsj with start time 1628254341
+2021-08-06 20:52:24,126 DEBUG   SenderThread:1068 [sender.py:send():179] send: summary
+2021-08-06 20:52:24,127 DEBUG   HandlerThread:1068 [handler.py:handle_request():124] handle_request: run_start
+2021-08-06 20:52:24,127 INFO    SenderThread:1068 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-06 20:52:25,130 INFO    Thread-12 :1068 [dir_watcher.py:_on_file_created():216] file/dir created: E:\UCB\2021 Summer\GEnerative\MCR2\wandb\run-20210806_205221-29xzvdsj\files\wandb-summary.json
+2021-08-06 20:52:25,284 DEBUG   HandlerThread:1068 [meta.py:__init__():39] meta init
+2021-08-06 20:52:25,284 DEBUG   HandlerThread:1068 [meta.py:__init__():53] meta init done
+2021-08-06 20:52:25,284 DEBUG   HandlerThread:1068 [meta.py:probe():210] probe
+2021-08-06 20:52:25,302 DEBUG   HandlerThread:1068 [meta.py:_setup_git():200] setup git
+2021-08-06 20:52:25,345 DEBUG   HandlerThread:1068 [meta.py:_setup_git():207] setup git done
+2021-08-06 20:52:25,345 DEBUG   HandlerThread:1068 [meta.py:_save_pip():57] save pip
+2021-08-06 20:52:25,345 DEBUG   HandlerThread:1068 [meta.py:_save_pip():71] save pip done
+2021-08-06 20:52:25,347 DEBUG   HandlerThread:1068 [meta.py:probe():252] probe done
+2021-08-06 20:52:25,349 DEBUG   SenderThread:1068 [sender.py:send():179] send: files
+2021-08-06 20:52:25,349 INFO    SenderThread:1068 [sender.py:_save_file():841] saving file wandb-metadata.json with policy now
+2021-08-06 20:52:25,352 DEBUG   HandlerThread:1068 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 20:52:25,352 DEBUG   SenderThread:1068 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 20:52:26,141 INFO    Thread-12 :1068 [dir_watcher.py:_on_file_created():216] file/dir created: E:\UCB\2021 Summer\GEnerative\MCR2\wandb\run-20210806_205221-29xzvdsj\files\requirements.txt
+2021-08-06 20:52:26,141 INFO    Thread-12 :1068 [dir_watcher.py:_on_file_created():216] file/dir created: E:\UCB\2021 Summer\GEnerative\MCR2\wandb\run-20210806_205221-29xzvdsj\files\output.log
+2021-08-06 20:52:26,142 INFO    Thread-12 :1068 [dir_watcher.py:_on_file_created():216] file/dir created: E:\UCB\2021 Summer\GEnerative\MCR2\wandb\run-20210806_205221-29xzvdsj\files\wandb-metadata.json
+2021-08-06 20:52:26,329 DEBUG   SenderThread:1068 [sender.py:send():179] send: config
+2021-08-06 20:52:26,330 DEBUG   SenderThread:1068 [sender.py:send():179] send: config
+2021-08-06 20:52:26,330 DEBUG   SenderThread:1068 [sender.py:send():179] send: config
+2021-08-06 20:52:26,330 DEBUG   SenderThread:1068 [sender.py:send():179] send: config
+2021-08-06 20:52:26,330 DEBUG   SenderThread:1068 [sender.py:send():179] send: config
+2021-08-06 20:52:26,330 DEBUG   SenderThread:1068 [sender.py:send():179] send: config
+2021-08-06 20:52:26,330 DEBUG   SenderThread:1068 [sender.py:send():179] send: config
+2021-08-06 20:52:26,330 DEBUG   SenderThread:1068 [sender.py:send():179] send: config
+2021-08-06 20:52:27,744 INFO    Thread-17 :1068 [upload_job.py:push():137] Uploaded file C:\Users\ADMINI~1\AppData\Local\Temp\tmpe5ogta6ewandb\1mbm0z7z-wandb-metadata.json
+2021-08-06 20:52:28,163 INFO    Thread-12 :1068 [dir_watcher.py:_on_file_modified():229] file/dir modified: E:\UCB\2021 Summer\GEnerative\MCR2\wandb\run-20210806_205221-29xzvdsj\files\output.log
+2021-08-06 20:52:41,343 DEBUG   HandlerThread:1068 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 20:52:41,343 DEBUG   SenderThread:1068 [sender.py:send_request():193] send_request: stop_status
+2021-08-06 20:52:54,427 INFO    Thread-12 :1068 [dir_watcher.py:_on_file_modified():229] file/dir modified: E:\UCB\2021 Summer\GEnerative\MCR2\wandb\run-20210806_205221-29xzvdsj\files\config.yaml
+2021-08-06 20:52:56,508 DEBUG   SenderThread:1068 [sender.py:send():179] send: stats
+2021-08-06 20:52:57,388 DEBUG   HandlerThread:1068 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-06 20:52:57,388 DEBUG   SenderThread:1068 [sender.py:send_request():193] send_request: stop_status

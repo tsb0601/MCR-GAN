@@ -1,0 +1,81 @@
+2021-08-06 20:44:34,953 INFO    MainThread:2016 [wandb_setup.py:_flush():69] setting env: {}
+2021-08-06 20:44:34,953 INFO    MainThread:2016 [wandb_setup.py:_flush():69] setting login settings: {'api_key': '3e3cc4dd14c6ab7234edf0ac194d05235579734b'}
+2021-08-06 20:44:34,953 INFO    MainThread:2016 [wandb_setup.py:_flush():69] setting login settings: {'api_key': '3e3cc4dd14c6ab7234edf0ac194d05235579734b'}
+2021-08-06 20:44:34,953 INFO    MainThread:2016 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-08-06 20:44:34,953 INFO    MainThread:2016 [wandb_init.py:_log_setup():337] Logging user logs to E:\UCB\2021 Summer\GEnerative\MCR2\wandb\run-20210806_204434-76b17236\logs\debug.log
+2021-08-06 20:44:34,953 INFO    MainThread:2016 [wandb_init.py:_log_setup():338] Logging internal logs to E:\UCB\2021 Summer\GEnerative\MCR2\wandb\run-20210806_204434-76b17236\logs\debug-internal.log
+2021-08-06 20:44:34,954 INFO    MainThread:2016 [wandb_init.py:init():370] calling init triggers
+2021-08-06 20:44:34,954 INFO    MainThread:2016 [wandb_init.py:init():375] wandb.init called with sweep_config: {}
+config: {}
+2021-08-06 20:44:34,954 INFO    MainThread:2016 [wandb_init.py:init():419] starting backend
+2021-08-06 20:44:34,954 INFO    MainThread:2016 [backend.py:_multiprocessing_setup():70] multiprocessing start_methods=spawn, using: spawn
+2021-08-06 20:44:34,956 INFO    MainThread:2016 [backend.py:ensure_launched():135] starting backend process...
+2021-08-06 20:44:34,994 INFO    MainThread:2016 [backend.py:ensure_launched():139] started backend process with pid: 21476
+2021-08-06 20:44:34,995 INFO    MainThread:2016 [wandb_init.py:init():424] backend started and connected
+2021-08-06 20:44:34,995 INFO    MainThread:2016 [wandb_init.py:init():472] updated telemetry
+2021-08-06 20:44:34,996 INFO    MainThread:2016 [wandb_init.py:init():491] communicating current version
+2021-08-06 20:44:37,618 INFO    MainThread:2016 [wandb_init.py:init():496] got version response 
+2021-08-06 20:44:37,618 INFO    MainThread:2016 [wandb_init.py:init():504] communicating run to backend with 30 second timeout
+2021-08-06 20:44:39,529 ERROR   Thread-8  :2016 [retry.py:__call__():126] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\urllib3\connectionpool.py", line 696, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\urllib3\connectionpool.py", line 964, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\urllib3\connection.py", line 359, in connect
+    conn = self._connect_tls_proxy(hostname, conn)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\urllib3\connection.py", line 500, in _connect_tls_proxy
+    return ssl_wrap_socket(
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1125)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\requests\adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\urllib3\connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\urllib3\util\retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1125)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\wandb\sdk\lib\retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\wandb\sdk\internal\internal_api.py", line 130, in execute
+    return self.client.execute(*args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\wandb\vendor\gql-0.2.0\gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\wandb\vendor\gql-0.2.0\gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\wandb\vendor\gql-0.2.0\gql\transport\requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\requests\api.py", line 119, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\requests\sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\requests\sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python38\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:1125)')))
+2021-08-06 20:45:07,630 INFO    MainThread:2016 [interface.py:_communicate_run():656] couldn't get run from backend
+2021-08-06 20:45:07,630 ERROR   MainThread:2016 [wandb_init.py:init():508] backend process timed out
+2021-08-06 20:45:07,630 ERROR   MainThread:2016 [wandb_init.py:init():517] encountered error: Error communicating with wandb process
+try: wandb.init(settings=wandb.Settings(start_method='fork'))
+or:  wandb.init(settings=wandb.Settings(start_method='thread'))
+For more info see: https://docs.wandb.ai/library/init#init-start-error

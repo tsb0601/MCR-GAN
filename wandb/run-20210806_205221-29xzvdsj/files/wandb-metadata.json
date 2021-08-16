@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.7",
+    "heartbeatAt": "2021-08-06T12:52:25.284156",
+    "startedAt": "2021-08-06T12:52:21.003111",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3070",
+    "gpu_count": 1,
+    "cpu_count": 20,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "E:/UCB/2021 Summer/GEnerative/MCR2/mcrgan.py",
+    "codePath": "mcrgan.py",
+    "git": {
+        "remote": "https://github.com/Ma-Lab-Berkeley/MCR2.git",
+        "commit": "78d3c45ed8e985c516d3c20c14cdd7f95e8a1126"
+    },
+    "email": "tsb@berkeley.edu",
+    "root": "E:/UCB/2021 Summer/GEnerative/MCR2",
+    "host": "DESKTOP-4QAGBRGP",
+    "username": "Administrator",
+    "executable": "C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+}
